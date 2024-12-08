@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+    .promo {
+        flex-direction: column; /* Em dispositivos móveis, a imagem ficará acima do texto */
+    }
+
+    .promo .conteudo h1, 
+    .promo .conteudo h2 {
+        font-size: 4rem;
+    }
+
+    .promo .conteudo p {
+        font-size: 2rem;
+    }
+
+    .promo .conteudo a {
+        padding: 12px 30px;
+    }
+
+    .promo .imagem img {
+        max-width: 100%; /* Imagem se adapta melhor em dispositivos móveis */
+    }
+}
