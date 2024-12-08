@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #c1a74c;
+    --secondary-color: #9A6E24;
+    --text-color: white;
+    --background-color: #1c1c1c; /* Alterando para um fundo mais suave */
+    --highlight-color: #ff4d4d; /* Cor de destaque para o título */
+    --button-hover-color: #ffb84d; /* Cor de hover dos botões */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.promo {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 40px;
+}
+
+.promo .imagem img {
+    max-width: 500px; 
+    height: auto;
+   border-radius: 50px;
+   box-shadow: rgba(255, 255, 255, 0.481) 2px 2px 2px 2px ;
+   padding: 10px;
+    
+}
+
+.promo .conteudo {
+    text-align: left;
+    max-width: 500px;
+}
+.promo .conteudo p {
+    font-size: 2em;
+}
+
+.promo .conteudo h1, 
+.promo .conteudo h2, 
+.promo .conteudo p {
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.promo .conteudo h1#destaque {
+    color: var(--highlight-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    
+}
+
+.promo .conteudo a {
+    background-color: goldenrod;
+    color: var(--text-color);
+    padding: 15px 30px;
+    margin-left: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.promo .conteudo a:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+
+
+h1#destaque {
+    font-size: 4em;
+}
+
+h1#principal {
+    font-size: 3em;
+}
